@@ -1,0 +1,74 @@
+{
+  "dataset": {
+    "reviews_after_dedup": 1194,
+    "duplicates_removed": 231,
+    "label_distribution": {
+      "positive": 1003,
+      "neutral": 98,
+      "negative": 93
+    }
+  },
+  "original_labels": {
+    "share_of_4_5_star_reviews_labelled_negative": 0.207,
+    "agreement_with_rating_labels": 0.825
+  },
+  "split": {
+    "train": 955,
+    "test": 239
+  },
+  "models": {
+    "Majority class (baseline)": {
+      "accuracy": 0.841,
+      "macro_f1": 0.305,
+      "f1_per_class": {
+        "negative": 0.0,
+        "neutral": 0.0,
+        "positive": 0.914
+      },
+      "cv_macro_f1": "0.304 ± 0.000",
+      "seconds": 0.0
+    },
+    "TF-IDF + Naive Bayes": {
+      "accuracy": 0.992,
+      "macro_f1": 0.982,
+      "f1_per_class": {
+        "negative": 1.0,
+        "neutral": 0.95,
+        "positive": 0.995
+      },
+      "cv_macro_f1": "0.998 ± 0.004",
+      "seconds": 0.3
+    },
+    "TF-IDF + Logistic Regression": {
+      "accuracy": 0.992,
+      "macro_f1": 0.982,
+      "f1_per_class": {
+        "negative": 1.0,
+        "neutral": 0.95,
+        "positive": 0.995
+      },
+      "cv_macro_f1": "0.998 ± 0.004",
+      "seconds": 1.0
+    },
+    "Multilingual BERT, zero-shot (nlptown)": {
+      "accuracy": 0.833,
+      "macro_f1": 0.645,
+      "f1_per_class": {
+        "negative": 0.571,
+        "neutral": 0.455,
+        "positive": 0.909
+      },
+      "seconds": 135.3
+    },
+    "CamemBERT, fine-tuned": {
+      "accuracy": 0.987,
+      "macro_f1": 0.972,
+      "f1_per_class": {
+        "negative": 0.973,
+        "neutral": 0.95,
+        "positive": 0.993
+      },
+      "seconds": 3255.7
+    }
+  }
+}

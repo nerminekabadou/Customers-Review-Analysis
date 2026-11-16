@@ -1,0 +1,18 @@
+{
+  "rating_by_source": {
+    "added (Tunisian Arabizi)": {
+      "1": 48,
+      "2": 45,
+      "3": 97
+    },
+    "scraped (French)": {
+      "3": 1,
+      "4": 291,
+      "5": 712
+    }
+  },
+  "language_rule_positive_vs_rest": {
+    "accuracy": 0.881,
+    "macro_f1": 0.79
+  }
+}
